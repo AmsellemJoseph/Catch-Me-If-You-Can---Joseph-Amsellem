@@ -1,0 +1,244 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    cursor: url("../assets/cursors/Mario\ Paint\ Mario\ Head.cur"),auto;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/images/SuperMarioBros.-Desktop.jpg") center/contain;
+}
+
+#logo{
+    width: 150px;
+    height: 125px;
+    background: url("../assets/images/CatchMe.png") no-repeat center/contain;
+    margin: auto;
+}
+
+#startBtn{
+    position: absolute;
+    margin-top: 20px;
+    padding: 5px 11px;
+    background: yellow;
+    border-radius: 3px;
+    border: 2px solid black;
+    outline: none;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    z-index: 2;
+    left: 30px;
+    top: 50%;
+    cursor: url("../assets/cursors/Mario\ Paint\ Giant\ Pen.cur"),auto;
+}
+
+#startBtn:hover{
+    transform: translateY(-2.5px);
+}
+#startBtn:active{
+    transform: translateY(2.5px);
+}
+
+#scoreGameContainer{
+    margin-top: -10px;
+    width: 100%;
+    height: 100px;
+    background: url(../assets/images/WarpPipeTop.png)no-repeat center/cover;
+    margin-bottom: 450px;
+}
+
+#gameScreen{
+    position: relative;
+    width: 1220px;
+    height: 400px;
+    background:rgb(0, 0, 255);
+    border: 4px solid rgb(0, 200, 0);
+    border-radius: 4px;
+    margin: 10px auto;
+    top:-450px;
+    left: 50%;
+    transform: translateX(-60%);
+    cursor: url("../assets/cursors/Mario\ Paint\ Hand.cur"),auto;
+}
+
+#bestPlayerContainer{
+    position: relative;
+    top: -460px;
+    width: 100%;
+    height: 100px;  
+    background: url(../assets/images/WarpPipeBottom.png)no-repeat center/cover;
+}
+
+.score{
+    position: relative;
+    padding: 5px 0;
+    margin-top: 20px;
+    border: 2px solid  black;
+    border-radius: 3px;
+    width: 200px;
+    height: 60px;
+    background: white;
+}
+
+.score01{
+    position: absolute;
+    left: 20px;
+}
+.score02{
+    position: absolute;
+    left: 320px;
+}
+.score03{
+    position: absolute;
+    left: 620px;
+}
+.score04{
+    position: absolute;
+    left: 920px;
+}
+.score05{
+    position: absolute;
+    left: 1200px;
+}
+
+.score p{
+    font-size: 10px;
+    text-align: center;
+}
+
+#score,#nextLvl,#lvl,#missedClick,#timer,#point1,#point2,#point3,#point4,#point5{
+    color: goldenrod;
+    font-size: 16px;
+}
+
+#name1{
+    font-size: 14px;
+    color: blue;
+}
+#dateScore1,#dateScore2,#dateScore3,#dateScore4,#dateScore5{
+    position: absolute;
+    border-radius: 3px;
+    border: 2px solid white;
+    width: 200px;
+    height: 40px;
+    display:none;
+    z-index: 100;
+    font-size: 12px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+}
+#dateScore1{
+    top: 591px;
+    left: 100px;
+    background: blue;
+}
+#dateScore2,#dateScore3,#dateScore4,#dateScore5{
+    left: -2px;
+    top: -45px;
+}
+#dateScore2{
+    
+    background: green;
+}
+#dateScore3{
+    background: red;
+}
+#dateScore4{
+    background: yellowgreen;
+}
+#dateScore5{
+    background: purple;
+}
+#name2{
+    font-size: 14px;
+    color: green;
+}
+#name3{
+    font-size: 14px;
+    color: red;
+}
+#name4{
+    font-size: 14px;
+    color: yellowgreen;
+}
+#name5{
+    font-size: 14px;
+    color: purple;
+}
+
+.score2{
+    position: relative;
+}
+.score2 ul li{
+    list-style: none;
+}
+.score06{
+    position: absolute;
+    left: 100px;
+}
+.score07{
+    position: absolute;
+    left: 400px;
+}
+.score08{
+    position: absolute;
+    left: 700px;
+}
+.score09{
+    position: absolute;
+    left: 1000px;
+}
+.score10{
+    position: absolute;
+    left: 1300px;
+}
+
+#mysteryBox{
+    position: absolute;
+    width: 100px;
+    height: 48px;
+    background: url(../assets/images/mysteryBox.png)no-repeat center/contain;
+    top: 30px;
+    left: 30px;
+    animation: spin linear infinite;
+    animation-duration: 0s;
+    z-index: 10;
+    display: none;
+    cursor: url("../assets/cursors/Mario\ Paint\ Hand.cur"),auto;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+p{
+    padding: 5px;
+}
+#bowser{
+    width: 80px;
+    height: 80px;
+    background: url("../assets/images/Bowser.png")no-repeat center/contain;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    cursor: url("../assets/cursors/Mario\ Paint\ Hand.cur"),auto;
+    transition: all linear 1s;
+}
+
+#bowserJr{
+    width: 60px;
+    height: 60px;
+    background: url("..//assets/images/BowserJr.png")no-repeat center/contain;
+    position: absolute;
+    z-index: 100;
+    cursor: url("../assets/cursors/Mario\ Paint\ Hand.cur"),auto;
+    display: none;
+    transition: all linear 0.5s;
+}
